@@ -7,3 +7,9 @@
 PhysicalGame::PhysicalGame() {}
 
 PhysicalGame::PhysicalGame(const string &name, double price) : Game(name, price) {}
+
+string PhysicalGame::ship() {
+    stringstream s;
+    s<<" This product will have a shipment. "<<endl;
+    return s.str();
+}
