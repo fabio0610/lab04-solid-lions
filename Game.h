@@ -7,7 +7,7 @@
 #include <sstream>
 
 using namespace std;
-class Game : {
+class Game  {
 public:
     Game();
     Game(const string &name, double price);
