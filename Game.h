@@ -9,11 +9,8 @@ using namespace std;
 class Game {
 public:
     Game();
-
     Game(const string &name, double price);
-
     const string &getName() const;
-
     void setName(const string &name);
 
     double getPrice() const;
