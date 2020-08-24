@@ -38,22 +38,6 @@ void Game::setTax(double tax) {
     Game::tax = tax;
 }
 
-double Game::getItemWeight() const {
-    return itemWeight;
-}
-
-void Game::setItemWeight(double itemWeight) {
-    Game::itemWeight = itemWeight;
-}
-
-const std::string &Game::getProductDimensions() const {
-    return productDimensions;
-}
-
-void Game::setProductDimensions(const std::string &productDimensions) {
-    Game::productDimensions = productDimensions;
-}
-
 double Game::calculatePriceWithTax() {
     return getPrice() + (getPrice() * getTax());
 }
