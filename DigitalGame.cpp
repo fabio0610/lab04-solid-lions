@@ -25,3 +25,16 @@ const string &DigitalGame::getProductDimensions() const {
 void DigitalGame::setProductDimensions(const string &productDimensions) {
     DigitalGame::productDimensions = productDimensions;
 }
+
+double DigitalGame::discount() const {
+
+    double aux = getPrice();
+    double discount = aux * 0.15;
+
+    return discount;
+
+}
+
+
+
+

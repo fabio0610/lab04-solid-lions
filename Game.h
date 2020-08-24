@@ -5,8 +5,9 @@
 #ifndef LAB04_SOLID_GAME_H
 #define LAB04_SOLID_GAME_H
 #include <sstream>
+
 using namespace std;
-class Game {
+class Game : {
 public:
     Game();
     Game(const string &name, double price);
@@ -33,7 +34,7 @@ public:
 
     void save(const string &filename);
 
-    string toString();
+    virtual string toString();
 private:
     string name;
     double price;

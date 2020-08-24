@@ -7,8 +7,10 @@
 #include <sstream>
 #include <iostream>
 #include "Game.h"
+#include "Idiscount.h"
+
 using namespace std;
-class DigitalGame : public Game{
+class DigitalGame : public Game, Idiscount{
 private:
     double itemWeight;
     string productDimensions;
@@ -24,6 +26,9 @@ public:
     const string &getProductDimensions() const;
 
     void setProductDimensions(const string &productDimensions);
+
+    double discount() const override;
+
 };
 
 
