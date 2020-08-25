@@ -4,8 +4,6 @@
 
 #include "PhysicalGame.h"
 
-PhysicalGame::PhysicalGame(const string &name, double price, double tax) : Game(name, price, tax) {}
-
 PhysicalGame::PhysicalGame(const string &name, double price, double tax, double weight, double size) : Game(name, price,
                                                                                                             tax),
                                                                                                        weight(weight),
