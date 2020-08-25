@@ -4,10 +4,10 @@
 
 #include "PhysicalGame.h"
 
-PhysicalGame::PhysicalGame(const string &name, double price, double tax, double weight, double size) : Game(name, price,
-                                                                                                            tax),
-                                                                                                       weight(weight),
-                                                                                                       size(size) {
+PhysicalGame::PhysicalGame(const string &name, double price, double tax, double weight, double size)
+: Game(name, price,tax),weight(weight),size(size) {
+}
+
 double PhysicalGame::getWeight() const {
     return weight;
 }
@@ -29,6 +29,7 @@ string PhysicalGame::toString() {
     s<<Game::toString()<<endl;
     s<<"\t Weight: "<<getWeight()<<endl;
     s<<"\t Size: "<<getSize()<<endl;
+    return s.str();
 }
 string PhysicalGame::ship() {
     stringstream s;
