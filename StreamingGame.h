@@ -9,6 +9,7 @@
 class StreamingGame : public Game{
 public:
     StreamingGame();
+
 };
 
 

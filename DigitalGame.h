@@ -29,6 +29,7 @@ public:
 
     double discount() const override;
 
+    string toString();
 };
 
 
