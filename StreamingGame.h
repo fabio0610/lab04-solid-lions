@@ -20,6 +20,8 @@ public:
 
     string replaced();
 
+    virtual ~StreamingGame();
+
 };
 
 

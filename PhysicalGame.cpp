@@ -7,8 +7,7 @@
 PhysicalGame::PhysicalGame(const string &name, double price, double tax, double weight, double size) : Game(name, price,
                                                                                                             tax),
                                                                                                        weight(weight),
-                                                                                                       size(size) {}
-
+                                                                                                       size(size) {
 double PhysicalGame::getWeight() const {
     return weight;
 }

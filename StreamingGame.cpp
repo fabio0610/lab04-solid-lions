@@ -26,3 +26,7 @@ string StreamingGame::replaced() {
     s<<"This product will have a replacement."<<endl;
     return s.str();
 }
+
+StreamingGame::~StreamingGame() {
+
+}
