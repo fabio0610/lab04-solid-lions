@@ -6,19 +6,14 @@
 #include <fstream>
 #include "Game.h"
 
-Game::Game() {}
 
-Game::Game(const std::string &name, double price, double tax) : name(name), price(price), tax(tax) {}
+Game::Game(const string &name, double price, double tax) : name(name), price(price), tax(tax) {}
 
-Game::Game(const std::string &name, double price, double itemWeight,
-           const std::string &productDimensions) : name(name), price(price), itemWeight(itemWeight),
-           productDimensions(productDimensions) {}
-
-const std::string &Game::getName() const {
+const string &Game::getName() const {
     return name;
 }
 
-void Game::setName(const std::string &name) {
+void Game::setName(const string &name) {
     Game::name = name;
 }
 
@@ -38,30 +33,6 @@ void Game::setTax(double tax) {
     Game::tax = tax;
 }
 
-double Game::calculatePriceWithTax() {
-    return getPrice() + (getPrice() * getTax());
-}
+Game::~Game() {
 
-/**
- * Save the information into a text file
- * @param filename the name of the text file
- */
-void Game::save(const std::string &filename) {
-    std::ofstream ofs (filename, std::ofstream::out);
-
-    ofs << toString();
-
-    ofs.close();
-}
-
-std::string Game::toString() {
-    std::ostringstream output;
-    output << std::fixed << std::setprecision(2);
-    output << "Game Name: " << getName()
-           << "\nItem Weight: " << getItemWeight()
-           << "\nProduct Dimensions: " << getProductDimensions()
-           << "\nPrice: $" << getPrice()
-           << "\nPrice with Tax: $" << calculatePriceWithTax();
-
-    return output.str();
 }

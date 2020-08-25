@@ -5,13 +5,22 @@
 #ifndef LAB04_SOLID_GAME_H
 #define LAB04_SOLID_GAME_H
 #include <sstream>
+#include <iostream>
 
 using namespace std;
 class Game  {
+
+private:
+    string name;
+    double price;
+    double tax;
+
 public:
-    Game();
-    Game(const string &name, double price);
+
+    Game(const string &name, double price, double tax);
+
     const string &getName() const;
+
     void setName(const string &name);
 
     double getPrice() const;
@@ -22,15 +31,12 @@ public:
 
     void setTax(double tax);
 
-    virtual double calculatePriceWithTax() = 0;
+    virtual ~Game();
 
-    void save(const string &filename);
+    virtual string toString() ;
 
-    virtual string toString();
-private:
-    string name;
-    double price;
-    double tax;
+    double priceWithTax();
+
 };
 
 
