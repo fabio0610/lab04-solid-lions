@@ -8,6 +8,8 @@
 
 class PhysicalGame: public Game {
 private:
+
+
 public:
     PhysicalGame();
     PhysicalGame(const string &name, double price);

@@ -33,6 +33,25 @@ void Game::setTax(double tax) {
     Game::tax = tax;
 }
 
+double Game::priceWithTax() {
+
+    double aux = getPrice() + ((getPrice() * getTax())/100);
+
+}
+
+
+string Game::toString() {
+    stringstream s;
+
+    s<<"\t Name: "<<getName()<<endl;
+    s<<"\t Price: "<<getPrice()<<endl;
+    s<<"\t Tax: "<<getTax()<<endl;
+    s<<"\t final price with tax: "<<endl<<endl;
+
+    return s.str();
+}
+
+
 Game::~Game() {
 
 }
