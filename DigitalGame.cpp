@@ -1,9 +1,17 @@
 //
-// Created by Tere Solano on 24/8/2020.
+// Created by Usuario on 24/8/2020.
 //
 
 #include "DigitalGame.h"
 
+DigitalGame::DigitalGame(const string &name, double price, double tax, double sizeInMemory) : Game(name, price, tax),
+                                                                                              sizeInMemory(
+                                                                                                      sizeInMemory) {}
 
+double DigitalGame::getSizeInMemory() const {
+    return sizeInMemory;
+}
 
-
+void DigitalGame::setSizeInMemory(double sizeInMemory) {
+    DigitalGame::sizeInMemory = sizeInMemory;
+}
