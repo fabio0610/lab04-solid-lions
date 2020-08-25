@@ -4,10 +4,28 @@
 
 #ifndef LAB04_SOLID_PHYSICALGAME_H
 #define LAB04_SOLID_PHYSICALGAME_H
+#include "Game.h"
 
+class PhysicalGame : public Game {
+public:
+    PhysicalGame(const string &name, double price, double tax, double weight, double size);
 
-class PhysicalGame {
+    double getWeight() const;
 
+    void setWeight(double weight);
+
+    double getSize() const;
+
+    void setSize(double size);
+
+    virtual ~PhysicalGame();
+
+    string toString();
+
+    string ship();
+private:
+    double weight;
+    double size;
 };
 
 
