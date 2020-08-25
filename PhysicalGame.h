@@ -14,6 +14,8 @@ public:
     PhysicalGame();
     PhysicalGame(const string &name, double price);
     string ship();
+    string toString();
+
 };
 
 

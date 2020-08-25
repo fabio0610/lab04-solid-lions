@@ -19,3 +19,9 @@ string PhysicalGame::toString() {
     s<<"Price: "<<getPrice()<<endl;
     reu
 }
+string PhysicalGame::toString() {
+    stringstream s;
+    s<<"Name: "<<getName()<<endl;
+    s<<"Price: "<<getPrice()<<endl;
+    reu
+}

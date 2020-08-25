@@ -12,24 +12,10 @@
 using namespace std;
 class DigitalGame : public Game, Idiscount{
 private:
-    double itemWeight;
-    string productDimensions;
+
 public:
-    DigitalGame(const string &name, double price, double itemWeight, const string &productDimensions);
 
-    DigitalGame(double itemWeight, const string &productDimensions);
 
-    double getItemWeight() const;
-
-    void setItemWeight(double itemWeight);
-
-    const string &getProductDimensions() const;
-
-    void setProductDimensions(const string &productDimensions);
-
-    double discount() const override;
-
-    string toString();
 };
 
 
