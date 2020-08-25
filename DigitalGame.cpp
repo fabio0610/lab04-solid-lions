@@ -35,6 +35,13 @@ double DigitalGame::discount() const {
 
 }
 
+string DigitalGame::toString() {
+    stringstream s;
+    s<<"Name: "<<getName()<<endl;
+    s<<"Price: "<<getPrice()<<endl;
+    return s.str();
+}
+
 
 
 

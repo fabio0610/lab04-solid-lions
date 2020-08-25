@@ -8,10 +8,14 @@
 
 class PhysicalGame: public Game {
 private:
+    double weight;
+    double size;
 public:
     PhysicalGame();
     PhysicalGame(const string &name, double price);
     string ship();
+    string toString();
+
 };
 
 

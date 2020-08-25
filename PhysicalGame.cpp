@@ -13,3 +13,9 @@ string PhysicalGame::ship() {
     s<<" This product will have a shipment. "<<endl;
     return s.str();
 }
+string PhysicalGame::toString() {
+    stringstream s;
+    s<<"Name: "<<getName()<<endl;
+    s<<"Price: "<<getPrice()<<endl;
+    reu
+}
