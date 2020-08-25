@@ -37,3 +37,7 @@ string DigitalGame::toString() {
 
     return s.str();
 }
+
+DigitalGame::~DigitalGame() {
+
+}

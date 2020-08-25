@@ -18,7 +18,7 @@ void StreamingGame::setCategory(const string &category) {
 string StreamingGame::toString() {
     stringstream s;
     Game::toString();
-    s<<"Category: " <<getCategory()<<endl;
+    s<<"\t Category: " <<getCategory()<<endl;
     return s.str();
 }
 string StreamingGame::replaced() {

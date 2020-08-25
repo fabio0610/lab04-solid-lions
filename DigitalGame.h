@@ -23,6 +23,7 @@ public:
 
     string toString();
 
+    virtual ~DigitalGame();
 
 };
 
