@@ -4,9 +4,21 @@
 
 #ifndef LAB04_SOLID_STREAMINGGAME_H
 #define LAB04_SOLID_STREAMINGGAME_H
+#include "Game.h"
 
+class StreamingGame : public Game{
+private:
+    string category;
+public:
+    StreamingGame(const string &name, double price, double tax, const string &category);
 
-class StreamingGame {
+    const string &getCategory() const;
+
+    void setCategory(const string &category);
+
+    string toString();
+
+    string replaced();
 
 };
 
