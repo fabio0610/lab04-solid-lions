@@ -30,8 +30,8 @@ void PhysicalGame::setSize(double size) {
 string PhysicalGame::toString() {
     stringstream s;
     s<<Game::toString()<<endl;
-    s<<"Weight: "<<getWeight()<<endl;
-    s<<"Size: "<<getSize()<<endl;
+    s<<"\t Weight: "<<getWeight()<<endl;
+    s<<"\t Size: "<<getSize()<<endl;
 }
 string PhysicalGame::ship() {
     stringstream s;
