@@ -19,9 +19,9 @@ public:
 
     void setSizeInMemory(double sizeInMemory);
 
-    double priceWithDiscount();
+    double discount() const override ;
 
-    string toString() const;
+    string toString();
 
 
 };
