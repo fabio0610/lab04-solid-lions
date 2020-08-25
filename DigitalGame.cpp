@@ -15,3 +15,15 @@ double DigitalGame::getSizeInMemory() const {
 void DigitalGame::setSizeInMemory(double sizeInMemory) {
     DigitalGame::sizeInMemory = sizeInMemory;
 }
+
+double DigitalGame::priceWithDiscount(){
+
+    double aux = Game::priceWithTax();
+
+    double discount = (aux * 0.15);
+
+    return discount + aux;
+
+
+
+}

@@ -19,8 +19,9 @@ public:
 
     void setSizeInMemory(double sizeInMemory);
 
+    double priceWithDiscount();
 
-
+    string toString() const;
 
 
 };

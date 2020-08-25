@@ -37,6 +37,8 @@ double Game::priceWithTax() {
 
     double aux = getPrice() + ((getPrice() * getTax())/100);
 
+    return aux;
+
 }
 
 
